@@ -1,0 +1,26 @@
+{
+  "name": "e107/alexa",
+  "type": "e107-plugin",
+  "description": "Provides an endpoint to receive Amazon Echo requests from Alexa Skills.",
+  "keywords": [
+    "e107",
+    "plugin",
+    "alexa"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/lonalore/alexa",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/lonalore/alexa/issues",
+    "source": "https://github.com/lonalore/alexa"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/jakubsuchy/amazon-alexa-php"
+    }
+  ],
+  "require": {
+    "jakubsuchy/amazon-alexa-php": "dev-master"
+  }
+}
