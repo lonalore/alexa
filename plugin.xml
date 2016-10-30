@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Alexa" lan="LAN_PLUGIN_ALEXA_NAME" version="1.0" date="2016-10-30" compatibility="2.0" installRequired="true">
+	<author name="Lóna Lore" url="https://github.com/lonalore/alexa"/>
+	<summary lan="LAN_PLUGIN_ALEXA_SUMMARY">This is an integration plugin for Amazon Echo devices, allowing e107 to respond to Alexa Skills Kit requests.</summary>
+	<description lan="LAN_PLUGIN_ALEXA_DESCRIPTION">This is an integration plugin for Amazon Echo devices, allowing e107 to respond to Alexa Skills Kit requests. Right now the plugin provides only a basic integration. Developers will need to create their own customized handler plugin to handle custom Alexa skills.</description>
+	<category>tools</category>
+	<keywords>
+		<word>alexa</word>
+		<word>api</word>
+	</keywords>
+	<copyright>GNU/GPL</copyright>
+	<adminLinks>
+		<link url='admin_config.php' description='LAN_CONFIGURE' icon128="images/alexa_128.png" icon='images/alexa_32.png' iconSmall='images/alexa_16.png' primary='true' >LAN_CONFIGURE</link>
+	</adminLinks>
+	<pluginPrefs>
+		<pref name="addon_list"></pref>
+		<pref name="app_id"></pref>
+	</pluginPrefs>
+</e107Plugin>
