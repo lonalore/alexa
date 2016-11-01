@@ -11,7 +11,7 @@ if(!defined('e107_INIT'))
 	exit;
 }
 
-e107_require_once(e_PLUGIN . 'vendor/autoload.php');
+e107_require_once(e_PLUGIN . 'alexa/vendor/autoload.php');
 
 use Alexa\Request\Certificate;
 use Alexa\Request\Request;
@@ -111,6 +111,11 @@ class Alexa
 		// Return a failure response if not a POST request.
 		if('POST' != $_SERVER['REQUEST_METHOD'])
 		{
+			if(E107_DEBUG_LEVEL > 0)
+			{
+				e107::getDebug()->log('Not a POST request.');
+			}
+
 			header("HTTP/1.0 405 Method Not Allowed");
 			exit;
 		}
@@ -119,6 +124,11 @@ class Alexa
 		$data = file_get_contents("php://input");
 		if(empty($data))
 		{
+			if(E107_DEBUG_LEVEL > 0)
+			{
+				e107::getDebug()->log('Empty data.');
+			}
+
 			header("HTTP/1.0 400 Bad Request");
 			exit;
 		}
@@ -179,12 +189,20 @@ class Alexa
 			}
 			else
 			{
+				if(E107_DEBUG_LEVEL > 0)
+				{
+					e107::getDebug()->log('No response handler.');
+				}
+
 				header("HTTP/1.0 500 Internal Server Error");
 			}
 		} catch(Exception $e)
 		{
-			$message = $e->getMessage();
-			e107::getMessage()->addDebug($message);
+			if(E107_DEBUG_LEVEL > 0)
+			{
+				$message = $e->getMessage();
+				e107::getDebug()->log($message);
+			}
 
 			header("HTTP/1.0 500 Internal Server Error");
 		}
