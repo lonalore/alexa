@@ -1,5 +1,5 @@
 # Alexa
-e107 (v2) plugin - This is an integration plugin for Amazon Echo devices, allowing e107 to respond to Alexa Skills Kit requests. Right now the plugin provides only a basic integration. Developers will need to create their own customized handler plugin to handle custom Alexa skills. [See our demo plugin](https://github.com/lonalore/alexa_demo).
+e107 (v2) plugin - This is an integration plugin for Amazon Echo devices, allowing e107 to respond to Alexa Skills Kit requests. Right now the plugin provides only a basic integration. Developers will need to create their own customized handler plugin to handle custom Alexa skills. [Alexa Demo plugin](https://github.com/lonalore/alexa_demo).
 
 **Requirements**
 - [e107](https://github.com/e107inc/e107) (>= v2.1.2)
