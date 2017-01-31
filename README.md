@@ -27,3 +27,8 @@ e107 (v2) plugin - This is an integration plugin for Amazon Echo devices, allowi
   * On the **SSL Certificate** tab, choose what kind of SSL certificate is your site using
 * Save the configuration
 * Write down the _Application ID_ back on the original **Skill information** screen
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/lonalore/alexa/badge.svg?style=beer-square)](https://beerpay.io/lonalore/alexa)  [![Beerpay](https://beerpay.io/lonalore/alexa/make-wish.svg?style=flat-square)](https://beerpay.io/lonalore/alexa?focus=wish)
